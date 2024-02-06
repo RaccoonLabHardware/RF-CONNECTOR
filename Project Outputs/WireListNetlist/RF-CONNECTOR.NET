@@ -1,0 +1,36 @@
+Wire List
+
+<<< Component List >>>
+CONMCX013                       A1             LINX_CONMCX013
+CONMCX013                       A2             LINX_CONMCX013
+CONREVSMA013.062                B1             LINX_CONREVSMA013.031
+CONREVSMA013.062                B2             LINX_CONREVSMA013.031
+
+<<< Wire List >>>
+
+  NODE  REFERENCE  PIN #   PIN NAME       PIN TYPE    PART VALUE
+
+[00004] NetA2_G1
+        A2         G1      2              PASSIVE     CONMCX013
+        A2         G2      2              PASSIVE     CONMCX013
+        B2         S1      2              PASSIVE     CONREVSMA013.062
+        B2         S2      2              PASSIVE     CONREVSMA013.062
+        B2         S3      2              PASSIVE     CONREVSMA013.062
+        B2         S4      2              PASSIVE     CONREVSMA013.062
+
+[00003] NetA2_1
+        A2         1       1              PASSIVE     CONMCX013
+        B2         1       1              PASSIVE     CONREVSMA013.062
+
+[00002] NetA1_G1
+        A1         G1      2              PASSIVE     CONMCX013
+        A1         G2      2              PASSIVE     CONMCX013
+        B1         S1      2              PASSIVE     CONREVSMA013.062
+        B1         S2      2              PASSIVE     CONREVSMA013.062
+        B1         S3      2              PASSIVE     CONREVSMA013.062
+        B1         S4      2              PASSIVE     CONREVSMA013.062
+
+[00001] NetA1_1
+        A1         1       1              PASSIVE     CONMCX013
+        B1         1       1              PASSIVE     CONREVSMA013.062
+
