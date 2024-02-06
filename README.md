@@ -1,4 +1,4 @@
-# example-name v3.0.0 hardware 
+# RF-CONNECTOR v1.0.0 hardware 
 
 | View | Top | Bottom |
 | ---- | --- | ------ |
@@ -17,23 +17,20 @@ The node has connectors which are described in the table below.
 
 | N | Connector | Description |
 | - | - | - |
-| 1 | DEBUG? |  |
-| 2 | SWD1 |  |
+| 1 | A1, A2 |  |
+| 2 | B1, B2 |  |
 
 [Here](https://docs.raccoonlab.co/guide/wires/) you can find manufacturer part number of connectors it self and its mates.
 
 ## Pin configuration and functions
 
-| Pin N | DEBUG? | Pin N | SWD1 |
-| ----- | ---------------- | ----- | ---------------- |
-| 1 | 3.3 | 1 | GND |
-| 2 | DEBUG_TX | 2 | SWLK |
-| 3 | DEBUG_RX | 3 | SWDIO |
-| 4 | SWDIO | 4 | 3.3 |
-| 5 | SWCLK | | |
-| 6 | GND | | |
-| S1 | GND | | |
-| S2 | GND |
+| Pin N | A1 | Pin N | A2 | Pin N | B1 | Pin N | B2 |
+| ----- | ---------------- | ----- | ---------------- | ----- | ---------------- | ----- | ---------------- |
+| 1 | NetA1_1 | 1 | NetA2_1 | 1 | NetA1_1 | 1 | NetA2_1 |
+| G1 | NetA1_G1 | G1 | NetA2_G1 | S1 | NetA1_G1 | S1 | NetA2_G1 |
+| G2 | NetA1_G1 | G2 | NetA2_G1 | S2 | NetA1_G1 | S2 | NetA2_G1 |
+| S3 | NetA1_G1 | S3 | NetA2_G1 |
+| S4 | NetA1_G1 | S4 | NetA2_G1 |
 
 
 Here you can see all connections of MCU.
@@ -42,27 +39,6 @@ Here you can see all connections of MCU.
 
 | MCU PIN         | PIN Numer | NET Name | Description |
 | ---------- |  -- | --------------  | - |
-| PA7            |  18 | VERSION     |  |
-| PA14-BOOT0     |  36 | SWLK        |  |
-| PA13           |  35 | SWDIO       |  |
-| PA12_[PA10]    |  34 | STM_USB_DP  |  |
-| PA11_[PA9]     |  33 | STM_USB_DM  |  |
-| PF2-NRST       |  10 | STM_NRST    |  |
-| PB7            |  46 | SDA         |  |
-| PB6            |  45 | SCL         |  |
-| PA10           |  32 | RX          |  |
-| PF1-OSC_OUT    |  9  | OSC_OUT     |  |
-| PF0-OSC_IN     |  8  | OSC_IN      |  |
-| PC13           |  1  | LED_RED     |  |
-| PC14-OSC32_IN  |  2  | LED_GREEN   |  |
-| PC15-OSC32_OUT |  3  | LED_BLUE    |  |
-| VSS/VSSA       |  7  | GND         |  |
-| VSS            |  49 | GND         |  |
-| PD3            |  41 | DEBUG_TX    |  |
-| PD2            |  40 | DEBUG_RX    |  |
-| VBAT           |  4  | 3.3         |  |
-| VREF+          |  5  | 3.3         |  |
-| VDD/VDDA       |  6  | 3.3         |  |
 
 
 ## Specifications
@@ -75,8 +51,8 @@ Scheme is shown on the picture below. CAN model can be provided via email reques
 
 |       | Width, mm | Length, mm | Height, mm |
 | ----- | --------- | ---------- | ---------- |
-|Outline|      18.2 |       18.9 |        6.0 |
-|PCB    |     15.97 |      18.85 |        2.0 |
+|Outline|      44.0 |       29.2 |        9.2 |
+|PCB    |      44.0 |       16.5 |        1.6 |
 
 Total weight of device less than 50 g.
 
@@ -117,22 +93,22 @@ Device is designed to operate from an input voltage supply range between 4.5 V a
 - Break-away rail: Yes
 - Instructions:
 ~~~
-Final size is larger ( 18.2 x 18.9 mm ) than board it self ( 15.97 x 18.85 mm), 
+Final size is larger ( 44.0 x 29.2 mm ) than board it self ( 44.0 x 16.5 mm), 
 take a look at the picure in attachements. 
 Panel should be designed to be able to install PWM1, PWM2 while assembly.
 ~~~
 - Route Process: Panel as PCBWay prefer
 - X-out Allowance in Panel:  Accept
 
-- Size (single): 15.97 x 18.85 mm
+- Size (single): 44.0 x 16.5 mm
 - Quantity (single): 200
-- Layers: 4 -   ['L1', 'L2', 'L3', 'L4'] check [PCBway layer stack](https://www.pcbway.com/multi-layer-laminated-structure.html)
+- Layers: 2 -   ['L1', 'L4'] check [PCBway layer stack](https://www.pcbway.com/multi-layer-laminated-structure.html)
 
 - Material: FR-4
 - FR4-TG: TG 150-160
-- Thickness: 2.0
-- Min Track/Spacing: 5/5mil (0.127 mm)
-- Min Hole Size: 0.25 mm
+- Thickness: 1.6
+- Min Track/Spacing: 28/28mil (0.7 mm)
+- Min Hole Size: 0.3 mm
 - Solder Mask: Black
 - Silkscreen: White
 - Edge connector: No
@@ -142,7 +118,7 @@ Panel should be designed to be able to install PWM1, PWM2 while assembly.
 - Finished Copper: 1 oz Cu
 - Other Special request:
 ~~~
-Final size is larger ( 18.2 x 18.9 mm ) than board it self ( 15.97 x 18.85 mm )
+Final size is larger ( 44.0 x 29.2 mm ) than board it self ( 44.0 x 16.5 mm )
 ~~~
 
 ### Assembly Service
