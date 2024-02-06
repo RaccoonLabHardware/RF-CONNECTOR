@@ -1,4 +1,4 @@
-Designator	Quantity	MF	MP	Description	Value	Package
+Designator	Quantity	MF	MP	Description	Value	Package	Type	System
 
-"A1, A2"	"2"	"Linx Technologies"	"CONMCX013"	"RF Connectors / Coaxial Connectors MCX Connector Receptacle, Female Socket 50Ohm Board Edge, Cutout; Surface Mount Solder"	""	"-- Linx Technologies Inc."
-"B1, B2"	"2"	"Linx"	"CONREVSMA013.062"	"CONN RPSMA PLG STR 50OHM EDGEMNT"	""	"None"
+"A1, A2"	"2"	"Linx Technologies"	"CONMCX013"	"RF Connectors / Coaxial Connectors MCX Connector Receptacle, Female Socket 50Ohm Board Edge, Cutout; Surface Mount Solder"	"MCX-F"	"-- Linx Technologies Inc."	"SMD"	"Connector"
+"B1, B2"	"2"	"Linx"	"CONREVSMA013.062"	"CONN RPSMA PLG STR 50OHM EDGEMNT"	"RP-SMA"	"None"	"SMD"	"Connector"
