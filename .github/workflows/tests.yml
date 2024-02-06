@@ -1,0 +1,27 @@
+name: tests
+
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: repo
+      
+      - name: Checkout pcb-versions repo
+        uses: actions/checkout@v3
+        with:
+          repository: RaccoonLabHardware/pcb-versions
+          token: ${{ secrets.ACCESS_TOKEN }}
+          path: repo/scripts/pcb-versions
+
+      - name: Checkout pcb-tools repo
+        uses: actions/checkout@v3
+        with:
+          repository: sainquake/pcb-tools
+          path: repo/scripts/pcb-tools
+
+      - name: pcb-tools-test
+        run: |
+          cd repo && pip install pytest && pytest -v
